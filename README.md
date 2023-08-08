@@ -15,6 +15,7 @@ In order to improve the rendering efficiency and image quality of the path track
 3. Shadow ray optimization to determine whether it is parallel or intersected on the back: For shadow rays, add a small offset to avoid self intersection and prevent shadow distortion.
 4. Multi threaded rendering: Using multi threaded parallel rendering to divide the image into multiple regions, with each thread responsible for rendering one region, improves rendering efficiency. The method of using the C++thread library to achieve block based parallel computation and solution for ray tracing.
 5. Environmental lighting: In order to enhance the realism of the scene, global environmental lighting is introduced to simulate the indirect reflection of light in the scene.
+
 Conclusion:
 By implementing the path tracking algorithm and adopting the above optimization strategy, we successfully generated high-quality and realistic rendered images. The optimized path tracking algorithm significantly improves rendering efficiency, reduces image noise, and makes the rendering results more realistic and delicate. However, path tracking algorithms are still computationally intensive rendering methods, requiring more computational resources for complex scenes or high-resolution images.
 In future work, we can further research and apply more advanced ray tracing algorithms, such as importance sampling of ray tracing and machine learning based rendering methods, to further improve rendering efficiency and image quality, and meet higher rendering requirements.
