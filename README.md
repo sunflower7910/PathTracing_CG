@@ -3,7 +3,7 @@ Path Tracing Renderer: Cornell Box
 Path Tracing is a rendering algorithm based on the Monte Carlo method, which tracks the propagation path of light in the scene, calculates pixel color values, and generates high-quality and realistic images. In this report, we will summarize the implementation process of path tracking algorithms and some optimization strategies to improve rendering efficiency and image quality.
 
 The following is the rendering of the project:
-
+![Rendering](https://github.com/sunflower7910/PathTracing_CG/blob/main/pathTracing.png)
 The implementation of the path tracking algorithm for this project is mainly divided into the following steps:
 1. Find the intersection point between the ray and the scene
 If the intersection is a light source, if the ray hits the light source for the first time, it directly returns the color of the light source. If the ray hits the light source but is not directly illuminated by the pixel, it returns 0. This problem is solved when the intersection point is an object.
